@@ -11,6 +11,8 @@ public class VariablesNaming {
         * 파스칼 표기법(쌍봉낙타 표가법) ex: LastName => 클래스명, 파일명
         * 카멜 표기법(단봉낙타 표기법) ex : lastName => 변수명, 메소드명
         * 5. 예약어 사용불가 ex : public, void, int, String ...)
+        * 6. boolean
+        * is, flag
         * */
 
         String carBrandNames[] = {"Hyundai", "Toyota", "BMW", "Mercedes", "Kia"};
@@ -21,10 +23,14 @@ public class VariablesNaming {
 
 
         //상수 절대 변하지 않는 데이터 => 상수명 다 대문자
-        String COUNTRY_CODE[] = {"KR", "US", "CN", "JN", "GN"};
+        final String COUNTRY_CODE[] = {"KR", "US", "CN", "JN", "GN"};
 
         System.out.println("당신의 차 브랜드 : " + carBrandNames[4] + " ,모델은 : " + carModelName +
                 "\n색상 : " + carColor[0] + " , 연식 : " + CarpassangerCapacity + ", 모델 연도 : " + carModelYear[5]
                 + "년\nMade in " + COUNTRY_CODE[0]);
+
+
+
+
     }
 }

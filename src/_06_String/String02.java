@@ -18,6 +18,6 @@ public class String02 {
         System.out.println(s1 + s2);
         System.out.println(s1.concat(s2)); // 해당 문자열 뒤에 다른 문자열을 이어붙인다.
         System.out.println(s1 + " " + s2);
-        System.out.println(s1.concat(" ").concat(s2)); //
+        System.out.println(s1.concat(" ").concat(s2));
     }
 }

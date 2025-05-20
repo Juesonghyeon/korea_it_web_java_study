@@ -47,8 +47,9 @@ public class 수학문제 {
                 correctCount++;
             } else {
                 System.out.println("오답입니다. 정답은 " + answer + " 입니다.");
-            i++;
+
             }
+            i++;
         }
 
         System.out.println("총 맞춘 갯수는 : " + correctCount);

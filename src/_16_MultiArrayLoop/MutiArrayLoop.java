@@ -33,18 +33,50 @@ public class MutiArrayLoop {
 
         String[][] imaxSeats = new String[10][15];
         String[] eng = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
-        for (int i = 0; i < imaxSeats.length; i++) {
-            for (int j = 0; j < imaxSeats[i].length; j++) {
-                imaxSeats[i][j] = eng[i] + (j + 1);
+//        for (int i = 0; i < imaxSeats.length; i++) {
+//            for (int j = 0; j < imaxSeats[i].length; j++) {
+//                imaxSeats[i][j] = eng[i] + (j + 1);
+//
+//            }
+//        }
+//
+//        for (int i = 0; i < imaxSeats.length; i++) {
+//            for (int j = 0; j < imaxSeats[i].length; j++) {
+//                System.out.print(imaxSeats[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+//        String[][]arr = [][];
+//
+//
+//
+        int[][] arr = new int[3][3];
+        int num = 1;
 
+        //홀수만 다 대입
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                arr[i][j] = num;
+                num += 2;
             }
         }
 
-        for (int i = 0; i < imaxSeats.length; i++) {
-            for (int j = 0; j < imaxSeats[i].length; j++) {
-                System.out.print(imaxSeats[i][j] + " ");
+        // 출력 확인
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
+
+        int sum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                sum += arr[i][j];
+            }
+        }
+        System.out.println("합계는 " + sum);
+
     }
 }

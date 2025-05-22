@@ -20,26 +20,26 @@ public class Overloading {
         return result;
     }
     public static void printInfo(String name){
-        System.out.println(name);
+        System.out.println("이름은 : " + name);
     }
     public static void printInfo(String name, int age){
-        System.out.println(name + "," + age);
+        System.out.println("이름은 : " + name + " 나이는 : " + age);
     }
     public static void printInfo(String name, int age, String email){
-        System.out.println(name + "," + age +"," + email);
+        System.out.println("이름은 : " + name + " 나이는 : " + age +" 이메일은 : " + email);
     }
     public static void add(int num1, int num2){
-        System.out.println(num1 + num2);
+        System.out.println(num1 + " * " + num2 + " = " + num1 + num2);
     }
     public static void add(double num1, double num2){
         int num3 = (int) num1;
         int num4 = (int) num2;
-        System.out.println(num3 * num4);
+        System.out.println(num1 + " * " + num2 + " = " + num1 * num2);
     }
-    public static void add(String num1, String num2){
-        int num3 = Integer.parseInt(num1);
-        int num4 = Integer.parseInt(num2);
-        System.out.println(num3 + num4);
+    public static void add(String strnum1, String strnum2){
+        int num1 = Integer.parseInt(strnum1);
+        int num2 = Integer.parseInt(strnum2);
+        System.out.println(strnum1 + " + " + strnum2 + " = " + (num1 + num2));
     }
 
     public static void main(String[] args) {
@@ -54,9 +54,9 @@ public class Overloading {
         printInfo("주송현");
         printInfo("주송현", 18);
         printInfo("주송현", 18, "12345679abcdefg@gmail.com");
-        add(1,2);
-        add(2.3, 5.1);
-        add("5", "2");
+        add(3,4);
+        add(1.2, 3.4);
+        add("4", "5");
     }
     //문제
     //메소드 이름 printInfo()

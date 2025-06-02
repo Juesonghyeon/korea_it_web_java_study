@@ -9,8 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @RequiredArgsConstructor
 public class UserEntityLombok {
-    private final int userId;
-    @NonNull
+    private int userId;
     private String username;
     private  int age;
     private String email;

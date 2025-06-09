@@ -15,8 +15,8 @@ public class 수학문제 {
         int totalQuestions = scanner.nextInt();
 
         while (totalQuestions > i){
-            int x = random.nextInt(100);
-            int y = random.nextInt(1, 100);  // y는 1~99로 하여 0 방지
+            int x = random.nextInt(10 );
+            int y = random.nextInt(1, 10);  // y는 1~99로 하여 0 방지
             int operatorIndex = random.nextInt(4);
             String operator = operators[operatorIndex];
             int answer = 0;
